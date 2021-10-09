@@ -1,0 +1,108 @@
+Brother, I watched your video and subscribed your channel. I don't know coding, but I am learning it. This is just a try of your video. Its in your hand to give me PR.
+
+What Is An Algorithm?
+
+An algorithm is a set of step-by-step procedures, or a set of rules to follow, for completing a specific task or solving a particular problem. The word algorithm was first coined in the 9th century. Algorithms are all around us. Common examples include: the recipe for baking a cake, the method we use to solve a long division problem, the process of doing laundry, and the functionality of a search engine are all examples of an algorithm. Here’s what baking a cake might look like, written out as a list of instructions, just like an algorithm:
+
+    Preheat the oven
+    Gather the ingredients
+    Measure out the ingredients
+    Mix together the ingredients to make the batter
+    Grease a pan
+    Pour the batter into the pan
+    Put the pan in the oven
+    Set a timer
+    When the timer goes off, take the pan out of the oven
+    Enjoy!
+
+Algorithmic programming is all about writing a set of rules with a finite number of steps that instruct the computer how to perform a task. A computer program is essentially an algorithm that tells the computer what specific steps to execute, in what specific order, in order to carry out a specific task. Algorithms are written using particular syntax, depending on the programming language being used.
+Types of Algorithms
+
+Algorithms are classified based on the concepts that they use to accomplish a task. While there are many types of algorithms, the most fundamental types of computer science algorithms are:
+
+    Divide and conquer algorithms – divide the problem into smaller subproblems of the same type; solve those smaller problems, and combine those solutions to solve the original problem.
+    Brute force algorithms – try all possible solutions until a satisfactory solution is found.
+    Randomized algorithms – use a random number at least once during the computation to find a solution to the problem.
+    Greedy algorithms – find an optimal solution at the local level with the intent of finding an optimal solution for the whole problem.
+    Recursive algorithms – solve the lowest and simplest version of a problem to then solve increasingly larger versions of the problem until the solution to the original problem is found.
+    Backtracking algorithms – divide the problem into subproblems, each which can be attempted to be solved; however, if the desired solution is not reached, move backwards in the problem until a path is found that moves it forward.
+    Dynamic programming algorithms – break a complex problem into a collection of simpler subproblems, then solve each of those subproblems only once, storing their solution for future use instead of re-computing their solutions.
+
+Example of an Algorithm
+
+Solving a Rubik’s Cube
+
+There are a number of different algorithms, from simple to very complicated, that exist for solving a Rubik’s cube. Below is just one simple algorithm that significantly reduces the amount of time to solve this famous puzzle. First, let’s specify a notation to use (similar to picking a programming language).
+
+Each of the six faces of a Rubik’s cube can be represented by the first letter of their name:
+
+    U - up
+    D - down
+    L - left
+    R - right
+    F - front
+    B - back
+
+Each face can be turned in three different ways/directions. Using U as an example, these are represented as:
+
+    U - clockwise quarter-turn of the upper face
+    U' - counter-clockwise quarter-turn of the upper face
+    U2 - half turn in either direction of the upper face
+
+Now, let’s go through the steps in the algorithm to solve a Rubik’s Cube. Feel free to grab one of your own and follow along!
+Step 1: The Cross
+
+    First, flip some edges so that there is a white cross on the upper face.
+    Apply the following turns: F, R’, D’, R, F2, R’, U, R, U’, R’, R2, L2, U2, R2, L2.
+    The cross is now solved.
+
+Step 2: The White Corners
+
+    The edges on the white face are now complete, but the corners remain.
+    Depending on where the white-orange-green corner is in the puzzle, apply one of the following series of turns:
+        Bottom: R’, D’, R, D (repeat until the corner moves to its correct place)
+        Top: R’, D’, R, D (this moves the corner to the bottom; then, follow the above instructions)
+
+Step 3: Middle Layer Edges
+
+    Flip the cube so that the white is on the bottom.
+    Look for an edge that is on the top face and doesn’t have yellow on it.
+    Perform a U-turn so that the color on the front face of the edge matches with the center.
+    Depending on the direction that the edge could go, apply one of the following series of turns:
+        Left: U’, L’, U, L, U, F, U’, F’
+        Right: U, R, U’, R’, U’, F’, U, F)
+
+Step 4: Yellow Cross
+
+    Apply the following turns, until a yellow cross on the face appears with the yellow center: F, R, U, R’, U’, F’.
+    If there is an “L” shape, where the two yellow pieces showing are adjacent to each other, apply the following turns: F, U, R, U’, R’, F’.
+    If there is a “Line” shape, which is horizontal, apply the following turns: F, R, U, R’, U’, F’.
+
+Step 5: Sune and Antisune
+
+    Look at the face with the yellow center.
+    Depending on the below contingencies, apply one of the following series of turns:
+        If there is only one oriented corner: R, U, R’, U, R, U2, R’ (repeat until the desired position is attained)
+        There is one oriented corner and one right-facing corner: U2, R, U2, R’, U’, R, U’, R’
+
+Step 6: Finishing the puzzle
+
+    Look for sets of “headlights” (two stickers of the same color in the same row, separated by a sticker of a different color).
+    Depending on how many there are, apply one of the following series of turns:
+        If there are a set of headlights on each side: R, U’, R, U, R, U, R, U’, R’, U’, R2
+        Otherwise: R’, F, R’, B2, R, F’, R’, B2, R2
+
+Sorting Algorithms
+
+A sorting algorithm is an algorithm that puts elements of a list in a certain order, usually in numerical or lexicographical order. Sorting is often an important first step in algorithms that solves more complex problems. There are a large number of sorting algorithms, each with their own benefits and costs. Below, we will focus on some of the more famous sorting algorithms.
+
+    Linear sort: Find the smallest element in the list to be sorted, add it to a new list, and remove it from the original list. Repeat this until the original list is empty.
+    Bubble sort: Compare the first two elements in the list, and if the first is greater than the second, swap them. Repeat this with every pair of adjacent elements in the list. Then, repeat this process until the list is fully sorted.
+    Insertion sort: Compare each element in the list to all the prior elements until a smaller element is found. Swap these two elements. Repeat this process until the list is fully sorted.
+
+Where Algorithms are Used in Computer Science?
+
+Algorithms are used in every part of computer science. They form the field's backbone. In computer science, an algorithm gives the computer a specific set of instructions, which allows the computer to do everything, be it running a calculator or running a rocket. Computer programs are, at their core, algorithms written in programming languages that the computer can understand. Computer algorithms play a big role in how social media works: which posts show up, which ads are seen, and so on. These decisions are all made by algorithms. Google’s programmers use algorithms to optimize searches, predict what users are going to type, and more. In problem-solving, a big part of computer programming is learning about the formation and analysis of algorithms.
+Why are Algorithms Important to Understand?
+
+Algorithmic thinking, or the ability to define clear steps to solve a problem, is crucial in many different fields, including machine learning and artificial intelligence. Even if we’re not conscious of it, we use algorithms and algorithmic thinking all the time. Algorithmic thinking allows students to break down problems and conceptualize solutions in terms of discrete steps. Being able to understand and implement an algorithm requires students to practice structured thinking and reasoning abilities.. 
